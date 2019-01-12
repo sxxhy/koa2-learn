@@ -40,11 +40,12 @@ router.get('/string', async (ctx, next) => {
   ctx.body = 'koa2 string'
 })
 
-router.get('/json', async (ctx, next) => {
+
+//curl -X POST  http://localhost:3000/json   window下curl获取post请求数据
+router.post('/json', async (ctx, next) => {
   const cookie = ctx.cookies.get('pvid')
   ctx.body = {
     title: 'koa2 json',
-    cookie
   }
 })
 

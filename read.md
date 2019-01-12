@@ -6,3 +6,5 @@ koa2 -e koa2-learn
 npm install
 ####
 npm start
+#### window下curl获取post请求数据
+exam: curl -X POST  http://localhost:3000/json 
